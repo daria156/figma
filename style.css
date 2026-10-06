@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+ @font-face {
+    font-family: "Poppins-Medium";
+    src: url("Poppins-Medium.ttf") format("truetype");
+    }
+     @font-face {
+    font-family: "eleptant3";
+    src: url("elephant3.ttf") format("truetype");
+    }
+ @font-face {
+    font-family: "rufina-bold";
+    src: url("rufina-bold.ttf") format("truetype");
+    }
 
 section {
     background: #C2EFD4;
@@ -23,8 +35,9 @@ header {
     gap: 57px;
     justify-content: space-between;
     align-items: center;
-    margin: 55px;
-    font-size: 22px;
+    margin: 25px;
+    font-size: 18px;
+    font-family: "Poppins-Medium";
 }
 
 .menu a {
@@ -36,35 +49,71 @@ header {
 .logo {
     width: 94px;
     height: 49px;
-    font-family: Elephant;
+    font-family: "eleptant3";
     color: #224F34;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .card {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Poppins-Medium";
 
 }
 
 .card img {
-    width: 32px;
-    height: 32px;
+    width: 31px;
+    height: 31px;
 }
 
 .button {
-    width: 142px;
-    height: 52px;
+    width: 132px;
+    height: 40px;
     border-radius: 2px;
     background: #C2EFD4;
     border: 3px solid #224F34;
 }
 
-.main h1 {
-    font-size: 86px;
-    width: 649px;
-    height: 318px;
-    color: #224F34;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 174px;
+    padding-top: 130px;
+}
+
+.hero-text {
+    max-width: 450px;
+}
+.hero-text h1 {
+    font-size: 65px;
+    color: #224F34;
+    font-family: "rufina-bold";
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #267D49;
+   width: 420px;
+    margin-bottom: 40px;
+    font-family: "Poppins-Medium";
+    line-height: 220.00000000000003%;
+    letter-spacing: 0%;
+}
+
+.hero button {
+    background: #224F34;
+    width: 190px;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow:  0 10px 20px rgba(34, 79,  52, 0.3);
+    border: none;
+    color: white;
+    font-family: "Poppins-Medium";
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
 }
