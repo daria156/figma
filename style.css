@@ -58,7 +58,7 @@ header {
     font-size: 32px;
 }
 
-.card {
+.bascet {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +66,7 @@ header {
 
 }
 
-.card img {
+.bascet img {
     width: 31px;
     height: 31px;
 }
@@ -285,8 +285,8 @@ header {
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 43px;
-    margin: 0 176px;
+     gap: 35px;
+     padding: 83px;
 }
  
 .card {
@@ -295,9 +295,23 @@ header {
     justify-items: center;
     align-content: start;
     min-width: 0;
+    padding: 8px 0;
 }
 
 .card img {
-    height: 350px ;
-    width: 280px;
+    width: 100%;
+    margin-bottom: 36px;
+   
+}
+
+.block img{
+    display: block;
+    object-fit: contain;
+    align-self: center;
+   transform: translateY(17px);
+}
+
+.banner img {
+height: 100%;
+width: 100%;
 }
