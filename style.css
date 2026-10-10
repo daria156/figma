@@ -195,10 +195,10 @@ header {
 
 .block {
     display: grid;
-    grid-template-columns: auto 1px auto auto;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 35px;
 
 }
 
@@ -206,20 +206,27 @@ header {
     font-family: "Poppins-Medium";
     font-size: 13px;
     color: #454545;
-
+    margin: 0;
+    align-self: center;
 }
 
-.block img:first-of-type {
+.block img {
+    display: block;
+    object-fit: contain;
+    align-self: center;
+   transform: translateY(11px);
+}
+
+.block img:first-of-type{
     width: 1px;
     height: 20px;
-
+  
 }
 
 .block img:last-of-type {
-    width: 13px;
-    height: 13px;
-    object-fit: contain;
-
+    width: 17px;
+    height: 17px;
+    margin-left: -30px;
 }
 
 .see-all {
@@ -239,4 +246,58 @@ header {
     font-family: "Poppins-Medium";
     font-size: 14px;
     cursor: pointer;
+}
+
+.hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 70px;
+    text-align: center;
+    gap: 105px;
+}
+
+.hero-text3 h1 {
+    font-size: 40px;
+    font-family: "RobotoSlab";
+    color: #224F34;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin: 75px 0;
+    margin-bottom: 45px;
+}
+
+.href3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 105px;
+}
+.href3 a {
+    gap: 105px;
+    font-size: 14px;
+    font-family: "Poppins-Medium";
+    color: #224F34;
+   text-decoration: none;
+   white-space: nowrap;
+
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 43px;
+    margin: 0 176px;
+}
+ 
+.card {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-content: start;
+    min-width: 0;
+}
+
+.card img {
+    height: 350px ;
+    width: 280px;
 }
